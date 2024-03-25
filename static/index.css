@@ -1,84 +1,200 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 
-.carousel-item{
-    height: 100vh;
-    min-height: 300px;
-    background: no-repeat scroll center scroll;
-    -webkit-background-size: cover;
-    background-size: cover;
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat scroll center scroll;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
-.carousel-item::before{
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #000;
-    opacity: 0.5;
+.carousel-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.5;
 }
 
-.carousel-caption{
-    bottom: 180px;
-    padding-left: 100px;
-    padding-right: 100px;
+.carousel-caption {
+  bottom: 160px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
-.carousel-caption h5{
-    font-size: 100px;
+.carousel-caption h5 {
+  font-size: 4rem;
+  font-weight: 700;
+  position: absolute;
+  right: 20px;
+  top: 40px;
+  background-color: rgb(0, 174, 255);
+  padding: 4px 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  /* position: relative; */
+  height: 100px;
+  width: 77%;
+}
+
+.carousel-caption h4 {
+    font-size: 4rem;
     font-weight: 700;
-    /* font-family: 'PT Sans', sans-serif; */
+    margin-bottom: 100px;
+    background-color: rgb(0, 174, 255);
+    padding: 4px 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    /* position: relative; */
+    height: 100px;
+    width: 80%;
 }
 
-.carousel-caption p{
-    font-size: 20px;
+.beit {
+    color: rgb(0, 174, 255);
+    background-color: white;
+    padding: 12px 10px;
+    border-radius: 10px 0 0 10px;
+    /* position: absolute; */
+    /* animation: to-right-play 3.5s ease-in-out 2.5s; */
 }
 
-.slider-btn{
-    /* background-color: red; */
+.carousel-caption h5 .name {
+    /* position: absolute;
+    left: 40px; */
+    background-color: transparent;
     color: white;
+    /* animation: to-left-play 3.5s ease-in-out 2.5s; */
+}
+
+.carousel-caption h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  padding: 10px 0;
+  overflow: hidden;
+  border-right: 0.3em solid rgb(0, 174, 255);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.02em;
+  animation: slide-to-right 2.5s ease-in-out, right-border 0.7s step-end infinite;
+}
+
+.carousel-caption p {
+  font-size: 20px;
+}
+
+.slider-btn button {
+  font-size: 2rem;
+  padding: 30px 50px;
+  margin-top: 3rem;
+  margin-left: 190px;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.slider-btn button:hover {
+  background-color: white;
+  color: rgb(0, 174, 255);
+  border-color: white;
+}
+
+.bi {
+  font-size: larger;
 }
 
 body {
-    margin-top: 25px;
-    font-size: 21px;
-    text-align: center;
-    animation: fadein 2s;
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari and Chrome */
-    -o-animation: fadein 2s; /* Opera */
+  font-size: 21px;
+  text-align: center;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
 }
 @keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:2;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 2;
+  }
 }
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:2;
-    }
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 2;
+  }
 }
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:2;
-    }
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 2;
+  }
 }
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 2;
-    }
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 2;
+  }
 }
+
+/* The slide-to-right effect */
+@keyframes slide-to-right {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes right-border {
+  from,
+  to {
+    border-color: rgb(0, 174, 255);
+  }
+  50% {
+    border-color: rgb(0, 174, 255);
+  }
+}
+
+  /* @keyframes to-right-play {
+    from, to {
+        left: 0;
+        border-radius: 10px 0 0 10px;
+      }
+      50% {
+        left: 585px;
+        border-radius: 10px
+      }
+  }
+
+  @keyframes  to-left-play {
+    0% {
+        left: 140px;
+      }
+      50% {
+        left: -200px;
+      }
+      100% {
+        left: 185px;
+      }
+  } */
