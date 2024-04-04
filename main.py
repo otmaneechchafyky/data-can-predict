@@ -18,6 +18,9 @@ def homepage():
 def formpage():
     return render_template('form.html')
 
+# @app.route('/buttons', methods=['POST', 'GET'])
+# def formpage():
+#     return render_template('buttons.html')
 
 def transform_and_process_data(df):
     df.dropna(thresh=5, inplace=True)

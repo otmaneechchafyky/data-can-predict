@@ -1,93 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/index.css" />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <title>Football Player Overall Score</title>
+  </head>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="static/index.css" />
-  <!-- Bootstrap Icons -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-  <title>Football Player Overall Score</title>
-</head>
-
-<body>
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-    </div>
-
-    <form action="/form" method="POST">
-
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="static/Ronaldo.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5><span class="beit">Be it</span><span class="name">Cristiano Ronaldo</span></h5>
-          </div>
-        </div>
-
-
-        <div class="carousel-item">
-          <img src="static/Messi.jpg" class="d-block" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h4><span class="beit">Be it</span> <span class="name">Lionel Messi</span></h4>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <img src="static/3.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-
-            <h1>Data can be predicted</h1>
-            <div class="slider-btn">
-              <button class="btn btn-primary btn-lg" type="submit">
-                  <i class="bi bi-play-circle-fill"></i> Start Predicting
-              </button>
-          </div>
-
-          </div>
-        </div>
-        
+  <body>
+    <header>
+      <div class="logo-container">
+        <h1>INTELLCAP</h1>
+        <span>SSS</span>
       </div>
-    </form>
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-
-  </div>
-
-  
-
-  <!-- Optional JavaScript; choose one of the two! -->
-
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
-
-</body>
-
+      <ul class="header-list">
+        <a href="#info">Information</a>
+        <a href="./form" class="btn">Start Predicting</a>
+      </ul>
+    </header>
+    <main class="main-container">
+      <section class="hero">
+        <div class="hero-title">
+          <h1 class="text-with-background">DATA CAN BE PREDICTED</h1>
+          <p class="description">
+            You will need to include some data so we can predict the overall
+            performance You will need to include some data so we can predict the overall
+            performance.
+          </p>
+          <a class="btn btn-prim" href="./form">
+            <span>Start Predicting</span><i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+        <div class="grid-container">
+          <div class="first-and-third-row">
+            <img src="../static//ronaldo.gif" class="image" alt="ronaldo" />
+            <img src="../static/zidane.gif" class="image" alt="zidane" />
+            <img src="../static//ziyech.gif" class="image" alt="ziyech" />
+          </div>
+          <div class="second-row">
+            <img src="../static/messi.gif" class="image" alt="messi" />
+            <img src="../static/women.gif" class="image" alt="women" />
+            <img src="../static//stat.gif" class="image" alt="stat" />
+          </div>
+          <div class="first-and-third-row">
+            <img src="../static/enn.gif" class="image" alt="zidane" />
+            <img src="../static//hakimi.gif" class="image" alt="ronaldo" />
+            <img src="../static/robot.gif" class="image" alt="messi" />
+          </div>
+        </div>
+      </section>
+      <section id="info">Info</section>
+    </main>
+  </body>
 </html>
