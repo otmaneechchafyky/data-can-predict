@@ -9,18 +9,18 @@ app = Flask(__name__)
 app.config['MAX_CONTENT_LENGTH'] = 50 * 1000 * 1000
 
 
-@app.route('/', methods=['POST', 'GET'])
-def homepage():
+@app.route('/')
+def index():
     return render_template('index.html')
 
-
-@app.route('/form', methods=['POST', 'GET'])
+@app.route('/form', methods=['GET', 'POST'])
 def formpage():
     return render_template('form.html')
 
-# @app.route('/buttons', methods=['POST', 'GET'])
-# def formpage():
-#     return render_template('buttons.html')
+@app.route('/buttons', methods=['POST', 'GET'])
+def buttons():
+    # Updated code here
+    return render_template('buttons.html')
 
 def transform_and_process_data(df):
     df.dropna(thresh=5, inplace=True)
