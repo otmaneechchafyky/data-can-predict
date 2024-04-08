@@ -1,0 +1,148 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    height: calc(100vh - 80px);
+}
+.text-main {
+    color: rgb(221, 221, 221);
+    font-size: 25px;
+}
+
+.input-file-container {
+    position: relative;
+    width: 225px;
+  } 
+  .js .input-file-trigger {
+    display: block;
+    padding: 14px 45px;
+    background: rgb(0, 247, 255);
+    color: black;
+    font-size: 1em;
+    font-weight: 500;
+    transition: all .4s;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .js .input-file {
+    position: absolute;
+    top: 0; left: 0;
+    width: 225px;
+    opacity: 0;
+    padding: 14px 0;
+    cursor: pointer;
+  }
+  .js .input-file:hover + .input-file-trigger,
+  .js .input-file:focus + .input-file-trigger,
+  .js .input-file-trigger:hover,
+  .js .input-file-trigger:focus {
+    background: rgb(2, 163, 168);
+    transform: scale(.98);
+  }
+  
+  .file-return {
+    margin: 0;
+  }
+  .file-return:not(:empty) {
+    margin: 1em 0;
+  }
+  .js .file-return {
+    font-style: italic;
+    font-size: .9em;
+    font-weight: bold;
+  }
+  .js .file-return:not(:empty):before {
+    content: "Selected file: ";
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  body {
+    font-family: "Open sans", "Segoe UI", "Segoe WP", Helvetica, Arial, sans-serif;
+    color: #7F8C9A;
+    background: #FCFDFD;
+  }
+  h1, h2 {
+    margin-bottom: 5px;
+    font-weight: normal;
+    text-align: center;
+    color:#aaa;
+  }
+  h2 {
+    margin: 5px 0 2em;
+    color: #1ABC9C;
+  }
+  form {
+    width: 225px;
+    margin: 0 auto;
+    text-align:center;
+  }
+  h2 + P {
+    text-align: center;
+  }
+  .txtcenter {
+    margin-top: 4em;
+    font-size: .9em;
+    text-align: center;
+    color: #aaa;
+  }
+  .copy {
+    margin-top: 2em;
+  }
+  .copy a {
+    text-decoration: none;
+    color: #1ABC9C;
+  }
+
+  .fill-btn {
+    padding: .7rem 3rem;
+    border: 1px solid rgb(0, 247, 255);
+    text-align: center;
+    font-size: large;
+    border-radius: 10px;
+    font-weight: 500;
+  }
+
+  .fill-btn:hover {
+    color: black;
+    background-color: rgb(0, 247, 255);
+  }
+
+  .para-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .OR {
+    color: rgb(0, 247, 255);
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .form-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 2px solid rgba(221, 221, 221, 0.5);
+    border-radius: 25px;
+    width: 40%;
+  }
+
+  .demo-link {
+    padding: 2px;
+    text-decoration: underline;
+  }
+
+  .demo-link:hover {
+    border-color: transparent;
+    color: rgb(221, 221, 221);
+  }
