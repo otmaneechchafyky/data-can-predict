@@ -21,7 +21,7 @@ def formpage():
 def buttons():
     # Updated code here
     return render_template('buttons.html')
-
+# something 
 def transform_and_process_data(df):
     df.dropna(thresh=5, inplace=True)
 
